@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=“description” content=“This is my first HTML project.”>
+    <link rel="shortcut icon" href="./icons8-sign-up-32.png" type="image/x-icon">
+    <title>Signup</title>
+    <style>
+        body {
+            background-color: black;
+            
+        }
+        .width{
+            width: 70%;
+            color: white;
+        }
+
+        .center{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .form-control,.form-control:active{
+            color: white;
+            background: transparent;
+            outline: none;
+        }
+        .f-w{
+            width: 100%;;
+        }
+        input{
+            margin-bottom: 10px;
+            border:0px;
+            border-bottom: 2px solid white;
+        }
+        
+        input::placeholder{
+            color: white;
+            
+        }
+        button{
+            padding: 5px 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="center">
+        <h1 class="width">Signup</h1>
+    </header>
+    <main class="center" >
+        <form class="width">
+            <input id="fullname" class="form-control f-w" type="text" placeholder="Full Name" required>
+            <input id="email" class="form-control f-w" type="text" placeholder="Email" required>
+            <input id="password" class="form-control f-w" type="text" placeholder="Password" required>
+            <input id="confirmpassword" class="form-control f-w" type="text" placeholder="Confirm Password" required>
+            <input id="birthdate" class="form-control f-w" type="text" placeholder="MM/DD/YYYY" required>
+            <input type="radio" id="student" name="profession" value="student" required>
+            <label for="html">Student</label>
+            <input type="radio" id="employee" name="profession" value="employee" required>
+            <label for="css">Employee</label><br>   
+            <input id="terms" name="term" value="accepter" type="checkbox" required>
+            <label>I agree to all the Terms and conditions</label><br>
+            <button type="submit" id="submit">Signup</button>   
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>
